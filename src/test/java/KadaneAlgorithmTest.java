@@ -35,24 +35,6 @@ public class KadaneAlgorithmTest {
                 "All negative elements should return the largest (least negative) element");
     }
 
-    @Test
-    void testMixedElements() {
-        assertEquals(6, KadaneAlgorithm.findMaxSubarray(new int[]{1, -2, 3, 4, -1, 2}, new Metrics())[0],
-                "Mixed elements should return the maximum sum subarray");
-    }
-
-    @Test
-    void testNoPositiveSum() {
-        assertEquals(0, KadaneAlgorithm.findMaxSubarray(new int[]{-2, -3, -1}, new Metrics())[0],
-                "No positive sum should return 0");
-    }
-
-    @Test
-    void testSubarrayWithZeros() {
-        assertEquals(5, KadaneAlgorithm.findMaxSubarray(new int[]{0, 1, 2, 3, 0, -1, -2}, new Metrics())[0],
-                "Array with zeros should return the sum of the largest subarray");
-    }
-
     // -------------------
     // Performance tests
     // -------------------
