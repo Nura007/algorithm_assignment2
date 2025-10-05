@@ -81,6 +81,7 @@ public class BenchmarkChart {
                 yData.add(seriesData.get(n));
             }
 
+
             chart.addSeries("Версия: " + version, xData, yData);
         }
 
